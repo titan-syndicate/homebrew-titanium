@@ -5,21 +5,21 @@
 class Titanium < Formula
   desc "Titanium CLI (ti): powerful toolkit for platform operations"
   homepage "https://github.com/titan-syndicate/titanium"
-  version "0.1.11-rc.4dda4e2"
+  version "0.1.11-rc.2fdd6bd"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/titan-syndicate/titanium/releases/download/v0.1.11-rc.4dda4e2/titanium_0.1.11-rc.4dda4e2_darwin_amd64.tar.gz"
-      sha256 "4efc43f8907822ede985ba60f3beb32fbecca9b2048f14569381319315082041"
+      url "https://github.com/titan-syndicate/titanium/releases/download/v0.1.11-rc.2fdd6bd/titanium_0.1.11-rc.2fdd6bd_darwin_amd64.tar.gz"
+      sha256 "9fb7e8411f2ac000618f56f2e35b7ac08edb255f6bfd49b8112b255246b867b5"
 
       def install
         bin.install "ti"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/titan-syndicate/titanium/releases/download/v0.1.11-rc.4dda4e2/titanium_0.1.11-rc.4dda4e2_darwin_arm64.tar.gz"
-      sha256 "cd0b9d0f2de68e2fe2af1904151010807d54d978b30979f14ae17b9985413c54"
+      url "https://github.com/titan-syndicate/titanium/releases/download/v0.1.11-rc.2fdd6bd/titanium_0.1.11-rc.2fdd6bd_darwin_arm64.tar.gz"
+      sha256 "2cc3c47c3356ddcd3cf527f6f93d29bb40fcadc6d3ca661afabd2db2fe5b63d1"
 
       def install
         bin.install "ti"
@@ -29,22 +29,22 @@ class Titanium < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/titan-syndicate/titanium/releases/download/v0.1.11-rc.4dda4e2/titanium_0.1.11-rc.4dda4e2_linux_amd64.tar.gz"
-      sha256 "833ad2067f56cf0a216f18c988baf46eb94a3a3d9bf9f4fccbc692a60f682b46"
+      url "https://github.com/titan-syndicate/titanium/releases/download/v0.1.11-rc.2fdd6bd/titanium_0.1.11-rc.2fdd6bd_linux_amd64.tar.gz"
+      sha256 "e5b2baa25b0596a0486bb5bcddcc94b77c8ef55c3d4a70bcab77d8b64036d5fa"
       def install
         bin.install "ti"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/titan-syndicate/titanium/releases/download/v0.1.11-rc.4dda4e2/titanium_0.1.11-rc.4dda4e2_linux_arm.tar.gz"
-      sha256 "6e7a2a164ae88f7495cbe94da47c433c9023f147f16d8ecb9e6462d1530ba59e"
+      url "https://github.com/titan-syndicate/titanium/releases/download/v0.1.11-rc.2fdd6bd/titanium_0.1.11-rc.2fdd6bd_linux_arm.tar.gz"
+      sha256 "2b2e8840f4f2afcd48cd37e56c9cc04708e5acdb99ef690262e8fc3ebd852bf6"
       def install
         bin.install "ti"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/titan-syndicate/titanium/releases/download/v0.1.11-rc.4dda4e2/titanium_0.1.11-rc.4dda4e2_linux_arm64.tar.gz"
-      sha256 "ad7d2a8118273337037088f6d3d88ebcdf0403deff8185816e4c708346c98818"
+      url "https://github.com/titan-syndicate/titanium/releases/download/v0.1.11-rc.2fdd6bd/titanium_0.1.11-rc.2fdd6bd_linux_arm64.tar.gz"
+      sha256 "8f89bc3a0a4e0bb4ae8d540c84e13c0212692723169be35f20946cddaecc4ca1"
       def install
         bin.install "ti"
       end
